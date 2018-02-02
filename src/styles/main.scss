@@ -1,5 +1,12 @@
-$white : #fff;
 
-body {
-    background: $white;
-}
+@charset "UTF-8";
+
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/helpers_mixins";
+@import "partials/forms";
+@import "partials/buttons";
+
+@import "partials/header";
+@import "partials/home";
+@import "partials/footer";

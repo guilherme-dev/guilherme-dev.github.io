@@ -1,0 +1,24 @@
+
+
+/* ------- BREAKPOINTS - use : @include breakpoint(mouse) { parameters: values; } ------- */
+@mixin breakpoint( $breakpoint ) {
+	@if $breakpoint == mouse {
+		@media only screen and (min-width: em(480)) { @content; }
+	}
+
+	@else if $breakpoint == dog {
+		@media only screen and (min-width: em(768)) { @content; }
+	}
+
+	@else if $breakpoint == horse {
+		@media only screen and (min-width: em(1024)) { @content; }
+	}
+
+	@else if $breakpoint == elephant {
+		@media only screen and (min-width: em(1280)) { @content; }
+	}
+
+	@else {
+		@media only screen and (min-width: $breakpoint) { @content; }
+	}
+}
