@@ -1,0 +1,28 @@
+{
+  "name": "guilherme-dev.github.io",
+  "version": "1.0.0",
+  "description": "My simple portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilherme-dev/guilherme-dev.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "css"
+  ],
+  "author": "@guilherme-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilherme-dev/guilherme-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/guilherme-dev/guilherme-dev.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
