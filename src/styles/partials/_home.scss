@@ -1,6 +1,11 @@
 
+// General stylesheet for home page
+body {
+	@include font-FuturaBT-Book;
+}
 
 .container {
     margin: 0 auto;
-    
+    padding: 0 15px;
+    @include clearfix;
 }

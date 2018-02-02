@@ -1,0 +1,24 @@
+/*
+  --------------
+      FONTS
+  --------------
+*/
+
+
+/* ------- FONT FAMILY------- */
+
+@font-face {
+  font-family: 'FuturaBT-Book';
+  src: url('fonts/FuturaBT-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------- FONT MIXIN - usage: @include font-FONT-NAME; ------- */
+// @mixin font-FONT-NAME {
+//   font-family: 'FONT NAME', Arial, Tahoma, sans-serif;
+// }
+
+@mixin font-FuturaBT-Book {
+  font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif;
+}

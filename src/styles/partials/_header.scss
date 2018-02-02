@@ -1,0 +1,26 @@
+//Styles for the header
+
+header {
+	background: linear-gradient(-45deg, $verde_base, $azul_base);
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	background-color: $navbar_color;
+}
+
+.navbar__nav {
+	height: 60px;
+	padding: 15px 15px 0;
+}
+
+.navbar__menu {
+	// display: none;
+	&.navbar__menu--collapsed {
+		display: block;
+	}
+}
