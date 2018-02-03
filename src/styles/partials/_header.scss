@@ -11,15 +11,57 @@ header {
 	display: block;
 	width: 100%;
 	background-color: $navbar_color;
+	color: white;
+	a:hover {
+		color: $verde_base;
+	}
 }
 
 .navbar__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	height: 60px;
-	padding: 15px 15px 0;
+	padding: 0 15px;
 }
+	.navbar__brand {
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		@include font-size(20px);
+	}
+	.navbar__button {
+		height: 35px;
+		width: 45px;
+		border: 1px solid $navbar_color_dark;
+		border-radius: 10%;
+		background-color: $navbar_color;
+		&:hover {
+			background-color: $navbar_color_dark;
+		}
+
+		&.navbar__button--hide {
+			display: none;
+		}
+	}
+		.icon-bar {
+			display: block;
+			height: 1px;
+			margin: 5px;
+			background-color: white;
+		}
 
 .navbar__menu {
 	// display: none;
+	padding: 15px;
+	border-top: 1px solid $navbar_color_dark;
+	
+	ul li {
+		margin: 10px;
+		font-weight: bold;
+		@include font-size(18px);
+	}
+
 	&.navbar__menu--collapsed {
 		display: block;
 	}

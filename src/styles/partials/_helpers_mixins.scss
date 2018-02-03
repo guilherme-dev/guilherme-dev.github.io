@@ -34,3 +34,14 @@
 		clear: both;
 	}
 }
+
+/* ------- FONTS - REM ------- */
+@function rem( $target, $context: 16px ) {
+	@return ( $target / $context ) * 1rem;
+}
+
+/* ------- FONTS - usage: @include font-size(14px); ------- */
+@mixin font-size($target, $context: 16px) {
+    font-size: $target;
+    font-size: rem($target,$context);
+}
