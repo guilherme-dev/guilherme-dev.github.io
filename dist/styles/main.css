@@ -1,0 +1,111 @@
+body {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a, a:link, a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+button:focus {
+  outline: none; }
+
+/*
+  --------------
+      FONTS
+  --------------
+*/
+/* ------- FONT FAMILY------- */
+@font-face {
+  font-family: 'FuturaBT-Book';
+  src: url("fonts/FuturaBT-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+/* ------- FONT MIXIN - usage: @include font-FONT-NAME; ------- */
+/* ------- BREAKPOINTS - use : @include breakpoint(mouse) { parameters: values; } ------- */
+/* ------- FONTS - REM ------- */
+/* ------- FONTS - usage: @include font-size(14px); ------- */
+header {
+  background: linear-gradient(-45deg, #00b1b3, #1d5086); }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #4d545d;
+  color: white; }
+  .navbar a:hover {
+    color: #00b1b3; }
+
+.navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  padding: 0 15px; }
+
+.navbar__brand {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.navbar__button {
+  height: 35px;
+  width: 45px;
+  border: 1px solid #3b3f44;
+  border-radius: 10%;
+  background-color: #4d545d; }
+  .navbar__button:hover {
+    background-color: #3b3f44; }
+  .navbar__button.navbar__button--hide {
+    display: none; }
+
+.icon-bar {
+  display: block;
+  height: 1px;
+  margin: 5px;
+  background-color: white; }
+
+.navbar__menu {
+  padding: 15px;
+  border-top: 1px solid #3b3f44; }
+  .navbar__menu ul li {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .navbar__menu.navbar__menu--collapsed {
+    display: block; }
+
+body {
+  font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  *zoom: 1; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+.sr-only {
+  font: 0/0 a;
+  position: absolute; }
