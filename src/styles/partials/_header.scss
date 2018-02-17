@@ -1,6 +1,8 @@
 //Styles for the header
 
 header {
+	display: flex;
+	min-height: 580px;
 	background: linear-gradient(-45deg, $verde_base, $azul_base);
 }
 
@@ -26,7 +28,6 @@ header {
 }
 	.navbar__brand {
 		color: white;
-		text-transform: uppercase;
 		font-weight: bold;
 		@include font-size(20px);
 	}
@@ -52,7 +53,7 @@ header {
 		}
 
 .navbar__menu {
-	// display: none;
+	display: none;
 	padding: 15px;
 	border-top: 1px solid $navbar_color_dark;
 	
@@ -61,8 +62,13 @@ header {
 		font-weight: bold;
 		@include font-size(18px);
 	}
-
 	&.navbar__menu--collapsed {
 		display: block;
 	}
+}
+
+.headline {
+	color: white;
+	align-self: flex-end;
+	text-align: center;
 }
