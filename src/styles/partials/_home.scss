@@ -2,6 +2,7 @@
 // General stylesheet for home page
 body {
 	@include font-FuturaBT-Book;
+
 }
 
 .container {
@@ -16,28 +17,45 @@ body {
 }
 
 .section {
-	min-height: 580px;
+	h1, h2 {
+		text-align: center;
+	}
 }
 
 
 // SECTION-WORK
 
 #section-work {
-	// @extend .section;
-	background-color: $cinza-lighter;
+	background-color: $section_color;
 }
+
+.row {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 15px;
+	@include breakpoint(mouse) {
+		grid-template-columns: auto auto;
+	}
+}
+	.row__item {
+		text-align: center;
+
+		figure {
+		}
+		img {
+			width: 100%;
+		}
+	}
 
 
 // SECTION ABOUT
 
 #section-about {
-	// @extend .section;
 
 }
 
 
 // SECTION CONTACT
 #section-contact {
-	// @extend .section;
-	background-color: $cinza-light;
+	background-color: $section_color;
 }

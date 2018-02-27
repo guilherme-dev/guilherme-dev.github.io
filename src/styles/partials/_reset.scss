@@ -1,9 +1,12 @@
 
 
-body {
+body, figure, p {
 	margin: 0;
 }
 
+img { 
+	display: block;
+}
 ul {
 	margin: 0;
 	padding: 0;

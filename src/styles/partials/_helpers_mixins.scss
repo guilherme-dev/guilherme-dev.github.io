@@ -1,4 +1,15 @@
 
+/* ------- FONTES - REM ------- */
+@function rem( $target, $context: 16px ) {
+	@return ( $target / $context ) * 1rem;
+}
+
+
+
+/* ------- FONTES - EM ------- */
+@function em( $target, $context: 16 ) {
+	@return ( $target / $context ) * 1em;
+}
 
 /* ------- BREAKPOINTS - use : @include breakpoint(mouse) { parameters: values; } ------- */
 @mixin breakpoint( $breakpoint ) {
@@ -33,11 +44,6 @@
 	&:after {
 		clear: both;
 	}
-}
-
-/* ------- FONTS - REM ------- */
-@function rem( $target, $context: 16px ) {
-	@return ( $target / $context ) * 1rem;
 }
 
 /* ------- FONTS - usage: @include font-size(14px); ------- */
