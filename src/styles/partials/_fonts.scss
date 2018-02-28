@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FuturaBT-Medium';
+  src: url('fonts/FuturaBT-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ------- FONT MIXIN - usage: @include font-FONT-NAME; ------- */
 // @mixin font-FONT-NAME {
 //   font-family: 'FONT NAME', Arial, Tahoma, sans-serif;
@@ -21,4 +28,8 @@
 
 @mixin font-FuturaBT-Book {
   font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif;
+}
+
+@mixin font-FuturaBT-Medium {
+  font-family: 'FuturaBT-Medium', Arial, Tahoma, sans-serif;
 }

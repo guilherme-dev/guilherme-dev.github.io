@@ -11,9 +11,9 @@ ul {
 li {
   list-style: none; }
 
-a, a:link, a:hover, a:active, a:focus, a:visited {
-  text-decoration: none;
-  color: inherit; }
+a {
+  color: inherit;
+  text-decoration: none; }
 
 button:focus {
   outline: none; }
@@ -30,6 +30,12 @@ button:focus {
   font-weight: 400;
   font-style: normal; }
 
+@font-face {
+  font-family: 'FuturaBT-Medium';
+  src: url("fonts/FuturaBT-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
 /* ------- FONT MIXIN - usage: @include font-FONT-NAME; ------- */
 /* ------- FONTES - REM ------- */
 /* ------- FONTES - EM ------- */
@@ -37,6 +43,9 @@ button:focus {
 /* ------- FONTS - usage: @include font-size(14px); ------- */
 body {
   font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif; }
+
+.link:hover, .navbar__brand:hover {
+  color: #00b1b3; }
 
 .container {
   margin: 0 auto;
@@ -53,10 +62,9 @@ body {
   position: absolute; }
 
 .section h1, header h1, .section h2, header h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
   text-align: center; }
-
-#section-work {
-  background-color: #d7d7d7; }
 
 .row {
   display: grid;
@@ -66,12 +74,47 @@ body {
     .row {
       grid-template-columns: auto auto; } }
 
-.row__item {
+.work-item {
   text-align: center; }
-  .row__item img {
+  .work-item img {
     width: 100%; }
 
-#section-contact {
+.work-item__title {
+  font-family: 'FuturaBT-Medium', Arial, Tahoma, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin: 10px 10px 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #2c3e50; }
+
+.work-item__tags {
+  margin-bottom: 5px; }
+  .work-item__tags::before {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20px;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: bold;
+    line-height: 1em;
+    content: "\203A";
+    color: #00b1b3; }
+  .work-item__tags li {
+    display: inline;
+    font-size: 16px;
+    font-size: 1rem; }
+
+.work-item__desc {
+  margin: 20px 0; }
+
+.work-item__link {
+  display: inline-block;
+  margin: 10px;
+  color: #00b1b3;
+  border-bottom: 1px solid #00b1b3; }
+
+#section-about {
   background-color: #d7d7d7; }
 
 header {
@@ -88,8 +131,6 @@ header {
   width: 100%;
   background-color: #4d545d;
   color: white; }
-  .navbar a:hover {
-    color: #00b1b3; }
 
 .navbar__nav {
   display: -webkit-box;

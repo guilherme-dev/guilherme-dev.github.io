@@ -14,9 +14,6 @@ header {
 	width: 100%;
 	background-color: $navbar_color;
 	color: white;
-	a:hover {
-		color: $verde_base;
-	}
 }
 
 .navbar__nav {
@@ -27,6 +24,7 @@ header {
 	padding: 0 15px;
 }
 	.navbar__brand {
+		@extend .link;
 		color: white;
 		font-weight: bold;
 		@include font-size(20px);

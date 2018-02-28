@@ -2,7 +2,12 @@
 // General stylesheet for home page
 body {
 	@include font-FuturaBT-Book;
+}
 
+.link {
+	&:hover {
+		color: $link_hover;
+	}
 }
 
 .container {
@@ -18,6 +23,7 @@ body {
 
 .section {
 	h1, h2 {
+		@include font-size(28px);
 		text-align: center;
 	}
 }
@@ -26,7 +32,7 @@ body {
 // SECTION-WORK
 
 #section-work {
-	background-color: $section_color;
+	
 }
 
 .row {
@@ -37,25 +43,66 @@ body {
 		grid-template-columns: auto auto;
 	}
 }
-	.row__item {
-		text-align: center;
 
-		figure {
-		}
-		img {
-			width: 100%;
-		}
+	.row__item {
+
 	}
+
+		.work-item {
+
+			text-align: center;
+			figure {
+
+			}
+			img {
+				width: 100%;
+			}
+		}
+			.work-item__title {
+				@include font-FuturaBT-Medium;
+				@include font-size(18px);
+				margin: 10px 10px 5px;
+				text-transform: uppercase;
+				letter-spacing: 5px;
+				color: $text_secondary;
+			}
+			.work-item__tags {
+				margin-bottom: 5px;
+				&::before {
+					display: inline-block;
+					vertical-align: bottom;
+					width: 20px;
+					@include font-size(22px);
+					font-weight: bold;
+					line-height: 1em;
+					content: "\203A";
+					color: $link_hover;
+				}
+
+				li {
+					display: inline;
+					@include font-size(16px);
+				}
+			}
+			.work-item__desc {
+				margin: 20px 0;
+			}
+			.work-item__link {
+				display: inline-block;
+				margin: 10px;
+				color: $link_hover;
+				border-bottom: 1px solid $link_hover;
+			}
 
 
 // SECTION ABOUT
 
 #section-about {
-
+	background-color: $section_color;
 }
 
 
 // SECTION CONTACT
 #section-contact {
-	background-color: $section_color;
+	
 }
