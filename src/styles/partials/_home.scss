@@ -1,5 +1,5 @@
 
-// General stylesheet for home page
+// General stylesheet and basic grid for the page
 body {
 	@include font-FuturaBT-Book;
 }
@@ -13,6 +13,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 1140px;
     @include clearfix;
 }
 
@@ -28,13 +29,6 @@ body {
 	}
 }
 
-
-// SECTION-WORK
-
-#section-work {
-	
-}
-
 .row {
 	display: grid;
 	grid-template-columns: auto;
@@ -42,57 +36,74 @@ body {
 	@include breakpoint(mouse) {
 		grid-template-columns: auto auto;
 	}
+	@include breakpoint(dog) {
+		grid-template-columns: auto auto auto;
+	}
 }
 
 	.row__item {
 
 	}
 
-		.work-item {
 
-			text-align: center;
-			figure {
+// SECTION-WORK
 
-			}
-			img {
-				width: 100%;
-			}
+#section-work {
+	
+}
+
+.work-item {
+	text-align: center;
+	border-bottom: 1px solid $section-color;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	img {
+		width: 100%;
+	}
+
+	&:last-child {
+		border: none;
+	}
+
+	@include breakpoint(mouse) {
+		border: none;
+	}
+}
+	.work-item__title {
+		@include font-FuturaBT-Medium;
+		@include font-size(18px);
+		margin: 10px 10px 5px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: $text_secondary;
+	}
+	.work-item__tags {
+		margin-bottom: 5px;
+		&::before {
+			display: inline-block;
+			vertical-align: bottom;
+			width: 20px;
+			@include font-size(22px);
+			font-weight: bold;
+			line-height: 1em;
+			content: "\203A";
+			color: $link_hover;
 		}
-			.work-item__title {
-				@include font-FuturaBT-Medium;
-				@include font-size(18px);
-				margin: 10px 10px 5px;
-				text-transform: uppercase;
-				letter-spacing: 5px;
-				color: $text_secondary;
-			}
-			.work-item__tags {
-				margin-bottom: 5px;
-				&::before {
-					display: inline-block;
-					vertical-align: bottom;
-					width: 20px;
-					@include font-size(22px);
-					font-weight: bold;
-					line-height: 1em;
-					content: "\203A";
-					color: $link_hover;
-				}
 
-				li {
-					display: inline;
-					@include font-size(16px);
-				}
-			}
-			.work-item__desc {
-				margin: 20px 0;
-			}
-			.work-item__link {
-				display: inline-block;
-				margin: 10px;
-				color: $link_hover;
-				border-bottom: 1px solid $link_hover;
-			}
+		li {
+			display: inline;
+			@include font-size(16px);
+		}
+	}
+	.work-item__desc {
+		margin: 20px 0;
+	}
+	.work-item__link {
+		display: inline-block;
+		margin: 10px;
+		color: $link_hover;
+		border-bottom: 1px solid $link_hover;
+	}
 
 
 // SECTION ABOUT

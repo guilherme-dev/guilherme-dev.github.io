@@ -21,7 +21,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
-	padding: 0 15px;
 }
 	.navbar__brand {
 		@extend .link;
@@ -66,7 +65,9 @@ header {
 }
 
 .headline {
+	margin: 60px auto 0;
 	color: white;
 	align-self: flex-end;
 	text-align: center;
+	@include clearfix;
 }
