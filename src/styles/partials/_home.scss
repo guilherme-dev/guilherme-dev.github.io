@@ -112,6 +112,32 @@ body {
 	background-color: $section_color;
 }
 
+.about-me {
+	
+	figure {
+		max-width: 250px;
+		margin: 0 auto 20px;
+		padding: 10px;
+		background-color: white;
+		border-radius: 50%;
+		border: 2px solid $section_color_darker;
+		img {
+			width: 100%;
+			border-radius: 100%;
+		}
+	}
+}
+	.about-me__text {
+		text-align: center;
+		margin-bottom: 40px;
+		@include breakpoint(dog) {
+			width: 50%;
+			margin: 0 auto 40px;
+		}
+	}
+
+
+
 
 // SECTION CONTACT
 #section-contact {
