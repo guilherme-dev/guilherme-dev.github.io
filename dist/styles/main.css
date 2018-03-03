@@ -141,8 +141,10 @@ body {
     border-radius: 100%; }
 
 .about-me__text {
-  text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
+  .about-me__text p {
+    margin: 5px auto 5px; }
   @media only screen and (min-width: 48em) {
     .about-me__text {
       width: 50%;

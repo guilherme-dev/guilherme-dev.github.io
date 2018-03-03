@@ -23,9 +23,9 @@
 			</div>
 			<div class="navbar__menu">
 				<ul>
-					<li><a href="#" class="link">Work</a></li>
-					<li><a href="#" class="link">About</a></li>
-					<li><a href="#" class="link">Contact</a></li>
+					<li><a href="#section-work" class="link">Porfólio</a></li>
+					<li><a href="#section-about" class="link">Sobre</a></li>
+					<li><a href="#section-contact" class="link">Contato</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -35,13 +35,13 @@
 				<h1>/* in development */</h1>
 				<!-- TODO: insert Atom animation -->
 				<h1>Guilherme Santos</h1>
-				<h2>Bachelor of Science in Computer Science and web developer</h2>
+				<h2>Bacharel em Ciência da Computação e desenvolvedor web</h2>
 			</div>
 		</div>
 	</header>
 	<section id="section-work" class="section">
 		<div class="container">
-			<h1>Work</h1>
+			<h1>Portfólio</h1>
 
 			<div class="row">
 				<div class="row__item work-item">
@@ -91,25 +91,42 @@
 	</section>
 	<section id="section-about" class="section">
 		<div class="container">
-			<h1>About Me</h1>
+			<h1>Sobre</h1>
 			<div class="about-me">
 				<figure>
 					<img src="dist/img/perfil.jpg" alt="">
 				</figure>
-				<p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus eveniet harum incidunt ea exercitationem, laudantium fuga explicabo fugit et rem! Mollitia, soluta illum odio. Debitis, eum beatae inventore aperiam!</p>
+				<div class="about-me__text">
+					<p>Sou Bacharel em Ciência da Computação pela Universidade Federal do Paraná, me graduei em 2017 e no momento trabalho como desenvolvedor web freelancer. Possuo experiência com tecnologias como PHP, Javascritp, HTML5, CSS3 / SASS.</p> 
+					<p>Comecei minha carreira profissional ainda durante a graduação, quando fiz parte da Ecomp - Empresa Júnior de Informática da UFPR - onde trabalhei como assessor de projetos em 2015 e diretor de projetos em 2016. Durante o segundo semestre de 2016 comecei a estagiar na Agência Mirum como desenvolvedor frontend. Neste período participei do desenvolvimento de sites para clientes como Listerine, Porto Seguro e Cyrela. </p>
+					<p>Tenho interesse em tecnologias Javascript como Node, React e Vuejs. Além disso, sou entusiasta de Machine Learning, , Blockchain e suas aplicações.</p>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="section-contact" class="section">
 		<div class="container">
-			<h1>Contact me</h1>
+			<h1>Contato</h1>
+			<!-- https://formspree.io/gsantos.ufpr@gmail.com -->
+			<form action="" method="POST" class="contact-form">
+				<input class="hidden" type="text" name="_gotcha">
+				<label>Name</label>
+					<input type="text" class="" placeholder="Nome" id="name" name="Name" required="" data-validation-required-message="Please enter your name.">
+				<label>Email Address</label>
+			    	<input type="email" class="" placeholder="Seu email" id="email" name="Email" required="" data-validation-required-message="Please enter your email address.">
+			    <label>Phone Number</label>
+			    	<input type="tel" class="" placeholder="Telefone" id="phone" name="Phone" required="" data-validation-required-message="Please enter your phone number.">
+			    <label>Message</label>
+			    	<textarea rows="5" class="" placeholder="Mensagem" id="message" name="Message" required="" data-validation-required-message="Please enter a message."></textarea>
+			    <input type="submit" value="Send">
+			</form>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
 			<secton id="section-contact-info" class="section">
 				<div class="social-media">
-					<h2>Social Media</h2>
+					<h2>Redes sociais</h2>
 					
 				</div>
 			</secton>
