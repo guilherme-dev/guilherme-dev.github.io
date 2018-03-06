@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="dist/styles/main.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<title>Guilherme Santos</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 				<div class="navbar__nav">
 					<a href="#" class="navbar__brand">@guilherme-dev</a>
 					<button class="navbar__button" type="button">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only">Exibir menu</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -46,43 +47,43 @@
 			<div class="row">
 				<div class="row__item work-item">
 					<figure>
-						<img src="dist/img/computer.png" alt="">
+						<img src="dist/img/computer.png" alt="Imagem ilustrativa do projeto" title="Ícone minimalista de um computador.">
 						<figcaption>
 							<h3 class="work-item__title">Title</h3>
 							<ul class="work-item__tags">
 								<li>HTML5, CSS3</li>
 							</ul>
 							<p class="work-item__desc">description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magnam eveniet.</p>
-							<a href="#" class="work-item__link">Code</a>
-							<a href="#" class="work-item__link">Demo</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Código</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Demo</a>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="row__item work-item">
 					<figure>
-						<img src="dist/img/computer.png" alt="">
+						<img src="dist/img/computer.png" alt="Imagem ilustrativa do projeto" title="Ícone minimalista de um computador.">
 						<figcaption>
 							<h3 class="work-item__title">Title</h3>
 							<ul class="work-item__tags">
 								<li>HTML5, CSS3</li>
 							</ul>
 							<p class="work-item__desc">description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magnam eveniet.</p>
-							<a href="#" class="work-item__link">Code</a>
-							<a href="#" class="work-item__link">Demo</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Código</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Demo</a>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="row__item work-item">
 					<figure>
-						<img src="dist/img/computer.png" alt="">
+						<img src="dist/img/computer.png" alt="Imagem ilustrativa do projeto" title="Ícone minimalista de um computador.">
 						<figcaption>
 							<h3 class="work-item__title">Title</h3>
 							<ul class="work-item__tags">
 								<li>HTML5, CSS3</li>
 							</ul>
 							<p class="work-item__desc">description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magnam eveniet.</p>
-							<a href="#" class="work-item__link">Code</a>
-							<a href="#" class="work-item__link">Demo</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Código</a>
+							<a href="#" class="work-item__link" target="_blank" rel="external" >Demo</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -93,13 +94,15 @@
 		<div class="container">
 			<h1>Sobre</h1>
 			<div class="about-me">
-				<figure>
-					<img src="dist/img/perfil.jpg" alt="">
-				</figure>
+				<div class="about-me__photo">
+					<figure>
+						<img src="dist/img/perfil.jpg" alt="">
+					</figure>
+				</div>
 				<div class="about-me__text">
 					<p>Sou Bacharel em Ciência da Computação pela Universidade Federal do Paraná, me graduei em 2017 e no momento trabalho como desenvolvedor web freelancer. Possuo experiência com tecnologias como PHP, Javascritp, HTML5, CSS3 / SASS.</p> 
 					<p>Comecei minha carreira profissional ainda durante a graduação, quando fiz parte da Ecomp - Empresa Júnior de Informática da UFPR - onde trabalhei como assessor de projetos em 2015 e diretor de projetos em 2016. Durante o segundo semestre de 2016 comecei a estagiar na Agência Mirum como desenvolvedor frontend. Neste período participei do desenvolvimento de sites para clientes como Listerine, Porto Seguro e Cyrela. </p>
-					<p>Tenho interesse em tecnologias Javascript como Node, React e Vuejs. Além disso, sou entusiasta de Machine Learning, , Blockchain e suas aplicações.</p>
+					<p>Tenho interesse em tecnologias Javascript como Node, React e Vuejs. Além disso, sou entusiasta de Machine Learning, Blockchain e suas aplicações.</p>
 				</div>
 			</div>
 		</div>
@@ -126,17 +129,27 @@
 					<label class="hidden" >Mensagem</label>
 			    	<textarea rows="5" class="form-group__input" placeholder="Deixe aqui sua mensagem!" id="message" name="Message" required="" data-validation-required-message="Por favor, deixe aqui sua mensagem."></textarea>
 				</div>
-				<input class="form-group__input form-group__input--submit" type="submit" value="Enviar">
+				<div class="form-group">
+					<input class="form-group__input form-group__input--submit" type="submit" value="Enviar">
+				</div>
 			</form>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
 			<secton id="section-contact-info" class="section">
-				<div class="social-media">
 					<h2>Redes sociais</h2>
-					
-				</div>
+					<ul class="social-media">
+						<li class="social-media__icon">
+							<a href="https://www.facebook.com/guiiilhermesantos" class="link" target="_blank" title="Meu perfil no facebook" rel="external"><span class="fab fa-facebook-square"></span></a>
+						</li>
+						<li class="social-media__icon">
+							<a href="https://github.com/guilherme-dev" class="link" target="_blank" title="Meu perfil no github" rel="external"><span class="fab fa-github-square"></span></a>
+						</li>
+						<li class="social-media__icon">
+							<a href="https://www.linkedin.com/in/guilherme-dev" class="link" target="_blank" title="Meu perfil no linkedin" rel="external"><span class="fab fa-linkedin"></span></a>
+						</li>
+					</ul>
 			</secton>
 		</div>
 	</footer>

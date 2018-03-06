@@ -5,3 +5,13 @@ footer {
 	background-color: $footer_color;
 	color: white;
 }
+
+.social-media {
+	margin-bottom: 40px;
+	text-align: center;
+}
+ .social-media__icon {
+ 	display: inline-block;
+ 	margin: 10px;
+ 	font-size: 3em;
+ }
