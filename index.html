@@ -109,16 +109,24 @@
 			<h1>Contato</h1>
 			<!-- https://formspree.io/gsantos.ufpr@gmail.com -->
 			<form action="" method="POST" class="contact-form">
-				<input class="hidden" type="text" name="_gotcha">
-				<label>Name</label>
-					<input type="text" class="" placeholder="Nome" id="name" name="Name" required="" data-validation-required-message="Please enter your name.">
-				<label>Email Address</label>
-			    	<input type="email" class="" placeholder="Seu email" id="email" name="Email" required="" data-validation-required-message="Please enter your email address.">
-			    <label>Phone Number</label>
-			    	<input type="tel" class="" placeholder="Telefone" id="phone" name="Phone" required="" data-validation-required-message="Please enter your phone number.">
-			    <label>Message</label>
-			    	<textarea rows="5" class="" placeholder="Mensagem" id="message" name="Message" required="" data-validation-required-message="Please enter a message."></textarea>
-			    <input type="submit" value="Send">
+				<input  class="hidden" type="text" name="_gotcha" />
+				<div class="form-group">
+					<label class="hidden" >Nome</label>
+					<input type="text" class="form-group__input" placeholder="Nome" id="name" name="Name" required="" data-validation-required-message="Por favor, digite seu nome.">
+				</div>
+				<div class="form-group">
+					<label class="hidden" >Email</label>
+			    	<input type="email" class="form-group__input" placeholder="Seu email" id="email" name="Email" required="" data-validation-required-message="Por favor, digite seu email.">
+				</div>
+				<div class="form-group">
+					<label class="hidden" >Telefone</label>
+			    	<input type="tel" class="form-group__input" placeholder="Telefone" id="phone" name="Phone">
+				</div>
+				<div class="form-group">
+					<label class="hidden" >Mensagem</label>
+			    	<textarea rows="5" class="form-group__input" placeholder="Deixe aqui sua mensagem!" id="message" name="Message" required="" data-validation-required-message="Por favor, deixe aqui sua mensagem."></textarea>
+				</div>
+				<input class="form-group__input form-group__input--submit" type="submit" value="Enviar">
 			</form>
 		</div>
 	</section>

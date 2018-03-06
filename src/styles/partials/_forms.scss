@@ -1,0 +1,39 @@
+// FORMS
+
+.hidden {
+	display: none;
+}
+
+.contact-form {
+	margin-bottom: 40px;
+	padding: 0 10px;
+}
+	.form-group {
+		margin: 10px auto;
+	}
+	.form-group__input {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		border: none;
+		border-bottom: 2px solid $input_border;
+		@include font-FuturaBT-Book;
+		@include font-size(18px);
+		&:focus {
+			outline: 0;
+			border-color: $link_hover;
+		}
+		&.form-group__input--submit {
+			max-width: 130px;
+			background-color: $link_hover;
+			border: none;
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+			&:focus, 
+			&:hover {
+				outline: 2px solid $button_focus;
+				background-color: $button_focus;
+			}
+		}
+	}

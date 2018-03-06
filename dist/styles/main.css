@@ -41,6 +41,40 @@ button:focus {
 /* ------- FONTES - EM ------- */
 /* ------- BREAKPOINTS - use : @include breakpoint(mouse) { parameters: values; } ------- */
 /* ------- FONTS - usage: @include font-size(14px); ------- */
+.hidden {
+  display: none; }
+
+.contact-form {
+  margin-bottom: 40px;
+  padding: 0 10px; }
+
+.form-group {
+  margin: 10px auto; }
+
+.form-group__input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #d7d7d7;
+  font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem; }
+  .form-group__input:focus {
+    outline: 0;
+    border-color: #00b1b3; }
+  .form-group__input.form-group__input--submit {
+    max-width: 130px;
+    background-color: #00b1b3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .form-group__input.form-group__input--submit:focus, .form-group__input.form-group__input--submit:hover {
+      outline: 2px solid #007f80;
+      background-color: #007f80; }
+
 body {
   font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif; }
 

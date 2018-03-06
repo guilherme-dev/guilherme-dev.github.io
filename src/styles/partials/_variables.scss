@@ -1,6 +1,7 @@
 
 
 //Colors
+$verde_dark   : #007f80;
 $verde_base   : #00b1b3;
 $azul_base    : #1d5086;
 $azul_cinza   : #2c3e50;
@@ -12,6 +13,7 @@ $cinza_lighter: #d7d7d7;
 
 $text_secondary : $azul_cinza;
 $link_hover : $verde_base;
+$button_focus : $verde_dark;
 
 $navbar_color : $cinza_base;
 $navbar_color_dark : $cinza_dark;
@@ -20,3 +22,5 @@ $section_color: $cinza_lighter;
 $section_color_darker : $cinza_light;
 
 $footer_color : $azul_cinza;
+
+$input_border : $cinza_lighter;
