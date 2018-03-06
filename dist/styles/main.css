@@ -188,6 +188,10 @@ body {
   text-align: center; }
   .about-me__text p {
     margin: 5px auto 5px; }
+  .about-me__text a {
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 1px solid #00b1b3; }
   @media only screen and (min-width: 48em) {
     .about-me__text {
       text-align: left;

@@ -143,6 +143,11 @@ body {
 		p {
 			margin: 5px auto 5px;
 		}
+		a {
+			display: inline-block;
+			margin-top: 20px;
+			border-bottom: 1px solid $link_hover;
+		}
 		@include breakpoint(dog) {
 			text-align: left;
 			margin: 0;
