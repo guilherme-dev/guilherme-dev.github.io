@@ -198,6 +198,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 600px;
   background: linear-gradient(-45deg, #00b1b3, #1d5086); }
 
 .navbar {
@@ -208,6 +209,9 @@ header {
   width: 100%;
   background-color: #4d545d;
   color: white; }
+  .navbar .container {
+    position: relative;
+    z-index: 200; }
 
 .navbar__nav {
   display: -webkit-box;
@@ -237,6 +241,9 @@ header {
     background-color: #3b3f44; }
   .navbar__button.navbar__button--hide {
     display: none; }
+  @media only screen and (min-width: 48em) {
+    .navbar__button {
+      display: none; } }
 
 .icon-bar {
   display: block;
@@ -246,7 +253,6 @@ header {
 
 .navbar__menu {
   display: none;
-  padding: 15px;
   border-top: 1px solid #3b3f44; }
   .navbar__menu ul li {
     margin: 10px;
@@ -255,6 +261,24 @@ header {
     font-size: 1.125rem; }
   .navbar__menu.navbar__menu--collapsed {
     display: block; }
+  @media only screen and (min-width: 48em) {
+    .navbar__menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .navbar__menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60px;
+        padding-right: 15px; } }
 
 .headline {
   margin: 60px auto 0;

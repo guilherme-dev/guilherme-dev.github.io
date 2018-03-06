@@ -3,6 +3,7 @@
 header {
 	@extend .section;
 	display: flex;
+	height: 600px;
 	background: linear-gradient(-45deg, $verde_base, $azul_base);
 }
 
@@ -14,6 +15,11 @@ header {
 	width: 100%;
 	background-color: $navbar_color;
 	color: white;
+
+	.container {
+		position: relative;
+		z-index: 200;
+	}
 }
 
 .navbar__nav {
@@ -41,6 +47,10 @@ header {
 		&.navbar__button--hide {
 			display: none;
 		}
+
+		@include breakpoint(dog) {
+			display: none;
+		}
 	}
 		.icon-bar {
 			display: block;
@@ -51,7 +61,6 @@ header {
 
 .navbar__menu {
 	display: none;
-	padding: 15px;
 	border-top: 1px solid $navbar_color_dark;
 	
 	ul li {
@@ -61,6 +70,20 @@ header {
 	}
 	&.navbar__menu--collapsed {
 		display: block;
+	}
+
+	@include breakpoint(dog) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 60px;
+			padding-right: 15px;
+		}
 	}
 }
 
