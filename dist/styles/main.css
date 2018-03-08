@@ -122,7 +122,8 @@ body {
   padding-bottom: 10px;
   margin-bottom: 20px; }
   .work-item img {
-    width: 100%; }
+    width: 100%;
+    max-height: 260px; }
   .work-item:last-child {
     border: none; }
   @media only screen and (min-width: 30em) {
