@@ -5,6 +5,7 @@ body {
 }
 
 .link {
+	transition: color 250ms ease-in-out;
 	&:hover {
 		color: $link_hover;
 	}
@@ -103,7 +104,13 @@ body {
 		display: inline-block;
 		margin: 10px;
 		color: $link_hover;
-		border-bottom: 1px solid $link_hover;
+		border-bottom: 1px solid transparent;
+		font-weight: bold;
+		transition: border-color 300ms ease-in-out, color 300ms ease-in-out;
+		&:hover {
+			color: $button_focus;
+			border-bottom: 1px solid $button_focus;
+		}
 	}
 
 

@@ -79,8 +79,11 @@ button:focus {
 body {
   font-family: 'FuturaBT-Book', Arial, Tahoma, sans-serif; }
 
-.link:hover, .navbar__brand:hover {
-  color: #00b1b3; }
+.link, .navbar__brand {
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out; }
+  .link:hover, .navbar__brand:hover {
+    color: #00b1b3; }
 
 .container {
   margin: 0 auto;
@@ -160,7 +163,13 @@ body {
   display: inline-block;
   margin: 10px;
   color: #00b1b3;
-  border-bottom: 1px solid #00b1b3; }
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+  -webkit-transition: border-color 300ms ease-in-out, color 300ms ease-in-out;
+  transition: border-color 300ms ease-in-out, color 300ms ease-in-out; }
+  .work-item__link:hover {
+    color: #007f80;
+    border-bottom: 1px solid #007f80; }
 
 #section-about {
   background-color: #d7d7d7; }
