@@ -111,10 +111,10 @@ body {
   grid-gap: 15px; }
   @media only screen and (min-width: 30em) {
     .row {
-      grid-template-columns: auto auto; } }
+      grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (min-width: 48em) {
     .row {
-      grid-template-columns: auto auto auto; } }
+      grid-template-columns: repeat(3, 1fr); } }
 
 .work-item {
   text-align: center;
@@ -319,3 +319,8 @@ footer {
   display: inline-block;
   margin: 10px;
   font-size: 3em; }
+
+.footer-bottom {
+  padding: 20px;
+  text-align: center;
+  background-color: #233140; }

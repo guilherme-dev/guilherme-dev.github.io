@@ -35,10 +35,10 @@ body {
 	grid-template-columns: auto;
 	grid-gap: 15px;
 	@include breakpoint(mouse) {
-		grid-template-columns: auto auto;
+		grid-template-columns: repeat(2, 1fr);
 	}
 	@include breakpoint(dog) {
-		grid-template-columns: auto auto auto;
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
