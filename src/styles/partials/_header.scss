@@ -2,7 +2,8 @@
 
 header {
 	@extend .section;
-	display: flex;
+	//display: flex;
+	padding-top: 80px;
 	height: 600px;
 	background: linear-gradient(-45deg, $verde_base, $azul_base);
 }

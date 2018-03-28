@@ -210,10 +210,125 @@ body {
       margin: 0;
       padding: 8% 40px 8% 0; } }
 
+.atom {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto; }
+
+.orbit {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 40px white;
+  box-shadow: 0 0 40px white;
+  border-radius: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.eletron {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: _rotate 2s infinite linear;
+  animation: _rotate 2s infinite linear; }
+  .eletron::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -10px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 120px white;
+    box-shadow: 0 0 120px white;
+    -webkit-transform: rotateX(80deg) rotateY(0deg);
+    transform: rotateX(80deg) rotateY(0deg); }
+
+.orbit--one {
+  -webkit-transform: rotateX(80deg) rotateY(20deg);
+  transform: rotateX(80deg) rotateY(20deg); }
+  .orbit--one .eletron {
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg); }
+  .orbit--one::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-right: -25px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    -webkit-animation: _nucleo 3s infinite linear;
+    animation: _nucleo 3s infinite linear; }
+
+.orbit--two {
+  -webkit-transform: rotateX(-80deg) rotateY(20deg);
+  transform: rotateX(-80deg) rotateY(20deg); }
+  .orbit--two .eletron {
+    -webkit-animation-delay: -.5s;
+    animation-delay: -.5s; }
+
+.orbit--three {
+  -webkit-transform: rotateX(70deg) rotateY(60deg);
+  transform: rotateX(70deg) rotateY(60deg); }
+  .orbit--three .eletron {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s; }
+
+.orbit--four {
+  -webkit-transform: rotateX(-70deg) rotateY(60deg);
+  transform: rotateX(-70deg) rotateY(60deg); }
+  .orbit--four .eletron {
+    -webkit-animation-delay: -1.5s;
+    animation-delay: -1.5s; }
+
+@-webkit-keyframes _rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg); } }
+
+@keyframes _rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg); } }
+
+@-webkit-keyframes _nucleo {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  50% {
+    -webkit-box-shadow: 0 0 25px white;
+    box-shadow: 0 0 25px white; } }
+
+@keyframes _nucleo {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  50% {
+    -webkit-box-shadow: 0 0 25px white;
+    box-shadow: 0 0 25px white; } }
+
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 80px;
   height: 600px;
   background: linear-gradient(-45deg, #00b1b3, #1d5086); }
 
